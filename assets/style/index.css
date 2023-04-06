@@ -1,0 +1,104 @@
+@import url("./reset.css");
+
+html {
+  font-family: Sofia Sans, sans-serif;
+}
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+body {
+  background-color: #14161d;
+}
+header{
+  background-color: #1f2229;
+  height: 60px;
+}
+header .flex{
+  display: flex;
+  justify-content: space-between;
+}
+header .title h1{
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #ffa500;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+}
+header nav ul{
+  list-style: none;
+  font-size: 0;
+}
+header nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  height: 60px;
+  width: 100px;
+}
+header nav ul li a{
+  text-align: center;
+  color: #d8d8d9;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.5s;
+}
+header nav ul li a:hover {
+  color: #ffa500;
+}
+main {
+  height: auto;
+}
+.flex {
+  display: flex;
+}
+section {
+  /* background: lightgray url("../image/earth.jpg") center center / cover no-repeat; */
+  background: #000 center center / cover no-repeat;
+  background-image: url("../image/deliver.jpeg");
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+section h2 {
+  margin-top: 180px;
+  color: #ffa500;
+  font-size: 60px;
+}
+section h3 {
+  margin-top: 50px;
+  color: #f0f2f4;
+  font-size: 30px;
+}
+section span {
+  font-size: 15px;
+  color: #000;
+}
+[data-animation-offset] {
+  animation: trans 2s ease-in;
+}
+[data-animation-offset=title] {
+  animation-delay: 0s;
+}
+@keyframes trans {
+  from{
+    opacity: 0; 
+    translate: 0 -10px;
+  }to{
+    opacity: 1; 
+    translate: 0 0;
+  }
+}
+#title {
+  margin-top: 75px;
+  color: #ffa500;
+  font-size: 60px;
+  text-align: center;
+}
+#map {
+  margin-top: 75px;
+  margin-inline: auto;
+  width: min(100% - 30px, 1080px);
+  height: 725px;
+}
