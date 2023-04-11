@@ -44,7 +44,7 @@ function setUpMap(center) {
   });
   const marker = new mapboxgl.Marker({
     color: "#ffa500",
-    draggable: true
+    draggable: false
     }).setLngLat(center)
     .addTo(map);
 }
